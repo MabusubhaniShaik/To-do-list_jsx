@@ -1,6 +1,6 @@
 export const fields = [
     {
-      id: "task_name",
+      id: "1",
       type: "input",
       label: "Task Name",
       placeholder: "Add Task Name",
@@ -8,7 +8,7 @@ export const fields = [
       sequence: 1
     },
     {
-      id: "task_description",
+      id: "2",
       type: "input",
       label: "Task Description",
       placeholder: "Add Task Description",
@@ -16,7 +16,14 @@ export const fields = [
       sequence: 2
     },
     {
-      id: "priority",
+    id: "3",
+    type: "datepicker",
+    label: "Task Completed date",
+    is_visible: true,
+    sequence: 3
+  },
+    {
+      id: "4",
       type: "select",
       label: "Priority",
       is_visible: true,
@@ -26,7 +33,16 @@ export const fields = [
         { key: "p3", value: "Priority 3" },
         { key: "p4", value: "Priority 4" }
       ],
-      sequence: 3
+      sequence: 4
     }
   ];
-  
+
+  export const tableLabels = [
+    "Task Name",
+    "Task Description",
+    "Task Created Time",
+    "Task Achieve Time",
+    "With In",
+    "Priority",
+    "Actions"
+];
